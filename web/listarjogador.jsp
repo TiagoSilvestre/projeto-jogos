@@ -12,21 +12,18 @@
                             <tr>
                                 <th>Nome personagem</th>
                                 <th>Email</th>
-                                    ${jogadoradministrador == null ? "" : "<th>Excluir</th>" }
+                                <!--${jogadoradministrador == null ? "" : "<th>Excluir</th>" }-->
+                                <th>Opções</th>
                             </tr>
                         </thead>
                         <c:forEach var="jogador" items="${listajogadores}">
                             <tr>
                                 <td><c:out value="${jogador.snome}"/></td>
                                 <td><c:out value="${jogador.semail}"/></td>
-                                <td>
+                                <td width="20%">
                                     <button class="btn btn-default" onClick="window.location.href = 'salvaredicaojogador?nomepersonagem=${jogador.snome}'"/>Editar</button>    
-                                </td>                       
-
-                                <td>
                                     <button class="btn btn-default" onClick="window.location.href = 'excluir?nome=${jogador.snome}'"/>Excluir</button>    
-                                </td>                                        
-
+                                </td>         
                             </tr>
                         </c:forEach>
                     </table>
