@@ -1,0 +1,14 @@
+/*C89*/SET SCHEMA PUBLIC
+CONNECT USER SA
+drop table jogadores
+create table jogadores(\u000a\u0009id integer identity primary key,\u000a\u0009nome varchar(255) not null,\u000a\u0009email varchar(255) not null,\u000a\u0009password varchar(255) not null,\u000a\u0009datecriacao Date not null\u000a)
+/*C90*/SET SCHEMA PUBLIC
+CONNECT USER SA
+DISCONNECT
+/*C91*/SET SCHEMA PUBLIC
+CONNECT USER SA
+INSERT INTO JOGADORES VALUES(0,'teste','teste@teste.com','teste','2018-06-13')
+DISCONNECT
+/*C92*/SET SCHEMA PUBLIC
+CONNECT USER SA
+DISCONNECT

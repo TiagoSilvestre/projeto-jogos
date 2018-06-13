@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : 31/05/2017, 19:32:04
-    Author     : comp8
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,10 +12,20 @@
         <link rel="stylesheet" href="css/simple-sidebar.css">        
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Aspiraboo</title>
+        <title>Unesc</title>
+        <style>
+            .headeres{
+                background: url(imagens/cast2.png);
+                height: 200px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position-y: -575px;            
+            }
+  
+        </style>
     </head>
     <body>
-        <div style="background:url(imagens/castelo.jpg); height: 200px; background-size: 100%;"></div>
+        <div class="headeres"></div>
         <header class="bs-docs-header" style="background-color: black; height: 10px;">     
         <div id="wrapper" class="toggled">            
             <!-- Sidebar -->
@@ -31,25 +35,15 @@
                         Lista de Opções
                     </li>
                     <li class="sidebar-brand">                        
-                        <!--<a href="#" onclick="paginaJogador('cadastrojogador.jsp')">Cadastro de Jogador</a>
-                        -->
-                        <a href="${loginlogout == null ? "cadastrojogador" : "minhaconta" }">${loginlogout == null ? "Cadastro de Jogador" : "Minha conta"}</a>                        
+                        <a href="cadastrojogador">Cadastro de Jogador</a>           
                     </li>
-                    <li class="sidebar-brand">                        
-                        <!--
-                        <a href="#" onclick="paginaJogador('login.jsp')">Login</a>
-                        -->
-                        <a href="${loginlogout == null ? "login" : "logout" }">${loginlogout == null ? "login" : "logout" }</a>
-                    </li>                    
-                    <li class="sidebar-brand">                        
+                   <!-- <li>             
                         <a href="#" onclick="paginaJogador('procurarjogador.jsp')">Procurar Jogador</a>
-                    </li>
+                    </li>-->
                     <li class="sidebar-brand">
                         <a href="listarjogador">Listar Todos</a>
                     </li>            
-                    <li class="sidebar-brand">
-                        <a href="#" onClick="paginaJogador('bibliografia.jsp')">Bibliografia</a>
-                    </li>                                
+                    
                 </ul>                
             </div>
             
@@ -66,7 +60,7 @@
         </div>    
         <footer id="rodape">
             <center>
-                By aspiraboo    
+                Todos direitos reservados
             </center>                    
         </footer>           
     </body>

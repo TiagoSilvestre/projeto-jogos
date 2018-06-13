@@ -9,20 +9,14 @@ import java.util.Date;
 
 /**
  *
- * @author comp8
+ * @author LuisGuilherme
  */
 public class Jogador {
-   private String snome;
-   private String semail;
-   private String spassword;
-   private Date ddatecriacao;
-   private int ivocacao;
-   private boolean badministrador;
-   private boolean bbanido;
-   private int ipoderdemagia;
-   private int ipoderdesword;
-   private int ipoderdeaxe;
-   private int ipoderdedefesa;
+
+    private String snome;
+    private String semail;
+    private String spassword;
+    private Date ddatecriacao;
 
     public String getSnome() {
         return snome;
@@ -56,59 +50,4 @@ public class Jogador {
         this.ddatecriacao = ddatecriacao;
     }
 
-    public int getIvocacao() {
-        return ivocacao;
-    }
-
-    public void setIvocacao(int ivocacao) {
-        this.ivocacao = ivocacao;
-    }
-
-    public boolean isBadministrador() {
-        return badministrador;
-    }
-
-    public void setBadministrador(boolean badministrador) {
-        this.badministrador = badministrador;
-    }
-
-    public boolean isBbanido() {
-        return bbanido;
-    }
-
-    public void setBbanido(boolean bbanido) {
-        this.bbanido = bbanido;
-    }
-
-    public int getIpoderdemagia() {
-        return ipoderdemagia;
-    }
-
-    public void setIpoderdemagia(int ipoderdemagia) {
-        this.ipoderdemagia = ipoderdemagia;
-    }
-
-    public int getIpoderdesword() {
-        return ipoderdesword;
-    }
-
-    public void setIpoderdesword(int ipoderdesword) {
-        this.ipoderdesword = ipoderdesword;
-    }
-
-    public int getIpoderdeaxe() {
-        return ipoderdeaxe;
-    }
-
-    public void setIpoderdeaxe(int ipoderdeaxe) {
-        this.ipoderdeaxe = ipoderdeaxe;
-    }
-
-    public int getIpoderdedefesa() {
-        return ipoderdedefesa;
-    }
-
-    public void setIpoderdedefesa(int ipoderdedefesa) {
-        this.ipoderdedefesa = ipoderdedefesa;
-    }
 }
