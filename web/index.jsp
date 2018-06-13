@@ -10,7 +10,7 @@
     </head>
     <body>
         <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">PROJETO JOGOS</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/jogo">PROJETO JOGOS</a>
         </nav>
 
         <div class="container-fluid">
@@ -50,51 +50,6 @@
                 </main>
             </div>
         </div>
-
-
-
-        <!--        
-                <div class="headeres"></div>
-                <header class="bs-docs-header" style="background-color: black; height: 10px;">     
-                <div id="wrapper" class="toggled">            
-        <!-- Sidebar 
-        <div id="sidebar-wrapper">                
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand" style="font-size: 28px;color: white;">                        
-                    Lista de Opções
-                </li>
-                <li class="sidebar-brand">                        
-                    <a href="cadastrojogador">Cadastro de Jogador</a>           
-                </li>
-        -->
-        <!-- <li>             
-             <a href="#" onclick="paginaJogador('procurarjogador.jsp')">Procurar Jogador</a>
-         </li>
-         <li class="sidebar-brand">
-             <a href="listarjogador">Listar Todos</a>
-         </li>            
-         
-     </ul>                
- </div>
-        -->            
-        <!-- Onde vai ser carregado as paginas 
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="col-lg-12">
-                    <div id="opcoesJogador">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    
-    <footer id="rodape">
-        <center>
-            Todos direitos reservados
-        </center>                    
-    </footer>
-        -->  
-
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>      
         <script src="js/bootstrap.min.js"></script>  
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
