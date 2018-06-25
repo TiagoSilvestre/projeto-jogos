@@ -5,7 +5,7 @@
  */
 package model;
 
-import br.com.modelo.Jogador;
+import modelo.Jogador;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -57,7 +57,7 @@ public class conn_Jogador {
     }
 
     /**
-     * Verifica se tem o jogador pelo nome 
+     * Verifica se tem o jogador pelo nome
      *
      */
     public static Jogador getJogador(String nome) {
@@ -118,12 +118,12 @@ public class conn_Jogador {
         String sql = "update jogadores set password=? where nome=?";
         try (Connection c = getConnection();
                 PreparedStatement ps = c.prepareStatement(sql)) {
-            ps.setString(1, jogador.getSemail());
+            ps.setString(1, jogador.getSpassword());
             ps.setString(2, jogador.getSnome());
             ps.execute();
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        } 
     }
 
     public static Connection getConnection() {

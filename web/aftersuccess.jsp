@@ -2,7 +2,6 @@
 
 <div class="nomepadrao">
     <h1 align="center">Dados do jogador</h1>
-
     <div class="container bd-content">
         <div class="tab-content" id="myTabContent">
             <form class="form-horizontal" action="editarjogador" method="post">
@@ -19,7 +18,7 @@
                     </div>                  
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2">Password</label>
+                    <label class="control-label col-sm-2">Senha</label>
                     <div class="col-sm-10">
                         <input class="form-control" value="${jogador.spassword}" name="password" placeholder="Password"/>
                     </div>                  
@@ -30,9 +29,6 @@
                         <input disabled class="form-control" value="${jogador.ddatecriacao}"/>
                     </div>                  
                 </div>
-
-
-
                 <center>
                     <button type="submit" class="btn btn-default">Salvar</button>
                 </center>

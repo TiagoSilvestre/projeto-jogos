@@ -6,7 +6,7 @@
 package controller;
 
 import model.conn_Jogador;
-import br.com.modelo.Jogador;
+import modelo.Jogador;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -79,7 +79,7 @@ public class ControllerJogador extends HttpServlet {
         jogador.setSemail(request.getParameter("email"));
         jogador.setSpassword(request.getParameter("password"));
 
-        conn_Jogador.banirJogador(jogador);
+        conn_Jogador.updateJogador(jogador);
         return "listarjogador";
     }
 
@@ -102,10 +102,10 @@ public class ControllerJogador extends HttpServlet {
             return "paginaerro.jsp";
         }
 
-        //   jogador.setSpassword(sPassword);
-        //  jogador.setSemail(sEmail);
-        //  jogador = conn_Jogador.updatePassword(jogador);
-        //  necessario para verificar se deu algum erro no update
+           jogador.setSpassword(jogador.getSpassword());
+          jogador.setSemail(jogador.getSemail());
+          jogador = conn_Jogador.updateJogador(jogador);
+//          necessario para verificar se deu algum erro no update
         request.setAttribute("jogador", jogador);
         return "aftersuccess.jsp";
     }
